@@ -1,0 +1,9 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        int valu=0;
+        for(int i=0;i<nums.length;i++){
+            valu=valu^nums[i];
+        }
+        return valu;
+    }
+}
